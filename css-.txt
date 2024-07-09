@@ -1,0 +1,260 @@
+css:-
+
+create a folder n open it with vs code
+create a file in css with the name .html
+
+
+apply styling:-
+----------------
+3 types:- internal,external,inline
+
+1.inline
+-----------
+
+we can apply styles in html where we require near the tags.
+by applying style attribute
+code style = "color : red ;font-size:30";>
+
+ex:-
+-----
+
+<h1 style=" color: blue; font-size: 30; ">this is the first prgm in css</h1>
+    <h1 style=" color: rgb(255, 0, 111); font-size: 30; ">welcome</h1>
+
+* this method will makes long code n clumsyness.
+.
+internal:-
+----------
+to reduce the length of the code we use this method.
+we add the style tag in head.
+
+ex:-
+<head>
+<style>
+h1{
+color:blue
+fpnt-size:30px;
+}</style>
+</head>
+
+the drawback in it is if add the style to one tag then every data with the same tag will have same style.
+we can add style to any tag in the head.
+
+ex:- we can add h1 tag p tag at the same time
+
+external:
+---------
+
+to reduce the length n clumsiness we use this method.
+mostly this external link will be used in the program as it is easy to understand easy to write & easy to retify error if any as the styling is in diff page & code is in diff page. 
+we wont write the style in same page which has code we will write it in another file.
+creation of new file:-
+go to explorer create a new file wibt with.css extension
+ 
+writh the style sheet code for the required tags.
+
+ex:-
+----
+h1{
+    color: blue;
+    font-size: 30px;
+}
+p{
+    color: red;
+    font-size: 20px;
+}
+
+create a link between css n html file.
+
+ex:-
+-----
+
+<link rel="stylesheet" href="firsr_css.css"/> in html file
+
+priority method :-
+-------------------
+the priority will be in this way in html for styling:-
+inline>internal>external
+
+when we apply the 3 types method in the code at a time  then the priority of inline will be more when compared to other two.
+
+when we apply the 2 types methods(internal & external ) in the code at a time  then the priority of internal will be more when compared to other two.
+
+selector:-
+-----------
+
+a selector 
+
+we can apply css style for a single or group of elements at atimeas per requirment.
+there are 4 typees:-
+group selector
+element
+id
+class
+
+1.group selector:-
+---------------------
+instead of  applying style to single elements we can apply them by group
+
+ex:-
+ body{
+
+color: blue
+bgcolor: pink;
+}
+
+when we apply this then whole data inside tht group will get same style.
+
+2.element selector:-
+---------------------
+we can apply styling for diff elements at a time,which makes that particular data & the data with the same element name  will have same style as the element name is same.
+
+ex:-
+-----
+h1{
+    color: aqua;
+    background-color: pink;
+}
+
+h2{
+
+    color : orange;
+    background: rosybrown;
+
+}
+p{
+    color: blueviolet;
+    background-color: aqua;
+}
+p1{
+
+    color: chartreuse;
+    background-color: dimgray ;
+}
+
+
+3.id selector:-
+----------------
+we can keep diff styles for data if the element is same also.
+
+in html class every element has to have an id.
+
+ex:-
+---
+<h1 id="mainhead">cheran</h1>
+<h1 id="sechead">cheran</h1>
+<h2 id="thirdhead">cheran</h2>
+<p id="firstpara">cheran</p>
+<p id="secpara">cheran</p>
+
+then in css class we  ned to mention the id name as # with id name.
+
+ex:-
+----
+#firsthead{
+    color: aqua;
+    background-color: pink;
+}
+
+#sechead{
+
+    color : orange;
+    background: rosybrown;
+
+}
+
+class selector:-
+-----------------
+it is same as id selector instead of writing id in html we write class and in css class we mention it as .(dot) & cls name.
+
+ex:-
+------
+in html cls:-
+---------------
+ <h1 class="first">Lorem ipsum dolor sit amet.</h1>
+    <h2 class="third four">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure quis dicta.</h2>
+    
+    <div class="first four">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit et earum tempore omnis obcaecati quaerat, necessitatibus aut labore blanditiis quidem eum officiis molestias eveniet magnam error neque accusantium! Quae.</div>
+    <div class="second">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit sed nihil, laudantium totam neque natus blanditiis ea odit! Nisi maxime provident accusamus cumque beatae magnam.</p>
+    </div>
+
+in css class;-
+---------------
+.first{
+    color:antiquewhite;
+    background-color: blue;
+}
+
+.second{
+    color:azure;
+    background-color: coral;
+
+}
+
+we can keep more one class for a particular element at a time by keeping space between space between cls names.
+
+
+selector preference ;-
+-----------------------
+
+id>class>element>group
+
+
+id will get the first priority then class then element then group.
+
+*if same element has been styled twice then the new one will get the priority.
+as the code runs as top to bottom then the the first one will be override the sec one.
+*if same id has been styled twice then the new one will get the priority.
+as the code runs as top to bottom then the the first one will be override the sec one.
+
+* if we keep *{
+color=blue;
+}
+then the whole website will be in blue as * is known as universal selector.
+
+
+
+
+
+giving style to set of data in a paragraph:-
+--------------------------------------------
+
+we need to select the data which need to styled by by span n need to give a class name for it.
+then in css we need to call the .class name n write the code.
+
+ex:-
+----
+in html class;-
+----------------
+<p> my name is<span class="special"> cheran</span></p>
+<span class="special"> show in upper case</span>
+
+in css classs;-
+---------------
+
+.special{
+
+    color: blueviolet;
+    background-color: black;
+}
+
+
+values:-
+----------
+there are 5 types in values
+absolute
+relative
+pixels
+em
+rem
+vw:-
+vh:-
+
+absolute value:-
+------------------
+which will nt change
+
+relative:-
+it will depend onn absolute / pRENT VALUES.'
+ 
